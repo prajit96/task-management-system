@@ -15,6 +15,7 @@ const taskSchema = new mongoose.Schema({
   },
   status: {
     type: Boolean,
+    default: 'pending'
   },
   userID: {
     type: String,
@@ -27,6 +28,9 @@ const taskSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now,
+  },
+  assignedTo: {
+    type: String,
   },
 });
 

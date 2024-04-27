@@ -1,7 +1,6 @@
 const express = require("express");
 const { taskModel } = require("../models/task.model");
 const { auth } = require("../middleware/auth.middleware");
-
 const taskRouter = express.Router();
 
 // post
